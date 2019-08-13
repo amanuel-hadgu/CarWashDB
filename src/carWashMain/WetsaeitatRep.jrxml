@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="WetsaeitatRep" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7da2c6ac-0391-42ae-874a-fe906e2fe214">
+	<style name="Title" fontName="Times New Roman" fontSize="50" isBold="true" pdfFontName="Times-Bold"/>
+	<style name="SubTitle" forecolor="#736343" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<style name="Row" mode="Transparent">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style backcolor="#E6DAC3"/>
+		</conditionalStyle>
+	</style>
+	<queryString language="SQL">
+		<![CDATA[select * from tblwetsaeitat]]>
+	</queryString>
+	<field name="GezaKray" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="HalkiElectric" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="HalkiMay" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Zeyti" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="HalkiNedadi" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="KeretsGbri" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Stationary" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="AquhuElectric" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="QbaDashboard" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="LbsiSerahtenata" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Meereyi" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DemozSerahtena" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Sheb" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Diter" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Tornyo" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Goz" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Kanava" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Gohaf" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Mekoster" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Kalamederiya" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Photocopy" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Drawliko" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Shgomano" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Shankielotat" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Kale" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Olet" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="136" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="164" height="126" uuid="df232ad8-451f-415a-a64f-a4e178d23a9c"/>
+				<imageExpression><![CDATA["coffee.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement style="Title" x="270" y="0" width="263" height="62" uuid="342ca12d-924d-40cd-90bc-1b00ea33cf15"/>
+				<textElement verticalAlignment="Middle">
+					<font pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[Coffee Title]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="SubTitle" x="303" y="62" width="196" height="22" uuid="e8509857-eba5-479a-a3db-fe862d979d3e"/>
+				<textElement>
+					<font fontName="Times New Roman" pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[Coffee SubTitle]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="172" y="94" width="383" height="42" uuid="8b362d75-772b-4436-8d13-fd6ea6617596"/>
+				<textElement textAlignment="Right">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor purus gravida arcu aliquam mattis. Donec et nulla libero, ut varius massa. Nulla sed turpis elit. Etiam aliquet mauris a ligula hendrerit in auctor leo lobortis.]]></text>
+			</staticText>
+			<image>
+				<reportElement x="633" y="-73" width="219" height="209" uuid="32102a93-88cd-4d22-8458-8d553d43b052"/>
+				<imageExpression><![CDATA["coffee_stain.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="16" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="15" width="802" height="1" uuid="3cd111d7-adaa-4d37-9de4-17fe9381ec08"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement style="Column header" x="0" y="0" width="30" height="15" forecolor="#736343" uuid="820531b3-c6d2-4e92-b72a-7f183dae37c8"/>
+				<text><![CDATA[GezaKray]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="30" y="0" width="30" height="15" forecolor="#736343" uuid="933ed018-fe5a-45cc-976c-02a69dfa35c6"/>
+				<text><![CDATA[HalkiElectric]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="60" y="0" width="30" height="15" forecolor="#736343" uuid="f3cbe78b-c0b5-4837-863c-70c8e0627b6f"/>
+				<text><![CDATA[HalkiMay]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="90" y="0" width="30" height="15" forecolor="#736343" uuid="5fd1041b-7b21-4924-a56f-d3e03dc1c89e"/>
+				<text><![CDATA[Zeyti]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="120" y="0" width="30" height="15" forecolor="#736343" uuid="d7c75733-eb44-4336-ad91-fbf13b3927db"/>
+				<text><![CDATA[HalkiNedadi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="150" y="0" width="30" height="15" forecolor="#736343" uuid="d81f576d-48da-4fb6-a18f-3cb690340808"/>
+				<text><![CDATA[KeretsGbri]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="180" y="0" width="30" height="15" forecolor="#736343" uuid="300444b3-b485-4c5f-b260-965a9030e924"/>
+				<text><![CDATA[Stationary]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="210" y="0" width="30" height="15" forecolor="#736343" uuid="b3e2ee8e-b0b6-4ff3-9999-f5888834d1e5"/>
+				<text><![CDATA[AquhuElectric]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="240" y="0" width="30" height="15" forecolor="#736343" uuid="c6b71ebe-3e84-44e1-b45d-fde4d64acd5e"/>
+				<text><![CDATA[QbaDashboard]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="270" y="0" width="30" height="15" forecolor="#736343" uuid="33c13623-6945-45c6-816e-563d4f097188"/>
+				<text><![CDATA[LbsiSerahtenata]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="300" y="0" width="30" height="15" forecolor="#736343" uuid="0f9074c7-29d0-44e9-8d35-58143ac04666"/>
+				<text><![CDATA[Meereyi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="330" y="0" width="30" height="15" forecolor="#736343" uuid="6509a139-5343-4ef3-aaa2-d0e80f3b97b3"/>
+				<text><![CDATA[DemozSerahtena]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="360" y="0" width="30" height="15" forecolor="#736343" uuid="04f0d4d7-d9be-48b2-8a05-878a19cf54be"/>
+				<text><![CDATA[Sheb]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="390" y="0" width="30" height="15" forecolor="#736343" uuid="a94317e1-cd46-4c9a-821c-4b0bf22b3425"/>
+				<text><![CDATA[Diter]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="420" y="0" width="30" height="15" forecolor="#736343" uuid="45fad617-85ed-4516-a8a7-d2a24fa2be52"/>
+				<text><![CDATA[Tornyo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="450" y="0" width="30" height="15" forecolor="#736343" uuid="4c3743dd-c0a4-4899-be41-4d1f265f4f2c"/>
+				<text><![CDATA[Goz]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="480" y="0" width="30" height="15" forecolor="#736343" uuid="548d0e45-9bbc-46c5-857b-f64db3f985a6"/>
+				<text><![CDATA[Kanava]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="510" y="0" width="30" height="15" forecolor="#736343" uuid="a73169ff-30c0-4906-a85c-e08950a46c94"/>
+				<text><![CDATA[Gohaf]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="540" y="0" width="30" height="15" forecolor="#736343" uuid="f412c701-217a-4526-9a71-de8cbb0055f5"/>
+				<text><![CDATA[Mekoster]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="570" y="0" width="30" height="15" forecolor="#736343" uuid="97dff21d-6937-45f8-8dd3-558310c0e756"/>
+				<text><![CDATA[Kalamederiya]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="600" y="0" width="30" height="15" forecolor="#736343" uuid="e89c8c34-dc31-40b4-b184-3dbd7508bf7a"/>
+				<text><![CDATA[Photocopy]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="630" y="0" width="30" height="15" forecolor="#736343" uuid="00393c61-2768-4bed-a666-c1c11748c836"/>
+				<text><![CDATA[Drawliko]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="660" y="0" width="30" height="15" forecolor="#736343" uuid="d969e6a9-df96-4371-a3ee-cbbad6696cbc"/>
+				<text><![CDATA[Shgomano]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="690" y="0" width="30" height="15" forecolor="#736343" uuid="2bbac249-ed60-4293-afce-de59139f570b"/>
+				<text><![CDATA[Shankielotat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="720" y="0" width="30" height="15" forecolor="#736343" uuid="5f27a9e5-493a-48d7-ba40-77cb6a0cb350"/>
+				<text><![CDATA[Kale]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="750" y="0" width="30" height="15" forecolor="#736343" uuid="98a71a58-7670-4bb5-ab8a-82bd02019e25"/>
+				<text><![CDATA[Olet]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="15" splitType="Stretch">
+			<frame>
+				<reportElement style="Row" mode="Opaque" x="0" y="0" width="802" height="15" uuid="7467a2bc-1403-4b74-b517-c1bca46248b1"/>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="0" y="0" width="30" height="15" uuid="e31f94b4-fb28-4a51-8c6c-540784aeafdf"/>
+					<textFieldExpression><![CDATA[$F{GezaKray}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="30" y="0" width="30" height="15" uuid="e8f14b4b-489a-499e-90a1-4ca48b1fcdda"/>
+					<textFieldExpression><![CDATA[$F{HalkiElectric}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="60" y="0" width="30" height="15" uuid="2d64d421-aca7-4469-9bbc-3e6da6d5901d"/>
+					<textFieldExpression><![CDATA[$F{HalkiMay}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="90" y="0" width="30" height="15" uuid="257bfead-4e81-4acd-8354-1455bbcc533e"/>
+					<textFieldExpression><![CDATA[$F{Zeyti}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="120" y="0" width="30" height="15" uuid="678356ce-bd3f-46ee-9f10-84331b3909c5"/>
+					<textFieldExpression><![CDATA[$F{HalkiNedadi}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="150" y="0" width="30" height="15" uuid="3688a92d-2293-4a12-9e03-45de683113b0"/>
+					<textFieldExpression><![CDATA[$F{KeretsGbri}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="180" y="0" width="30" height="15" uuid="1c404c66-2e66-42c0-98e9-c031b1ffc5aa"/>
+					<textFieldExpression><![CDATA[$F{Stationary}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="210" y="0" width="30" height="15" uuid="3502376e-4fe3-4307-9e5c-25b656a4f958"/>
+					<textFieldExpression><![CDATA[$F{AquhuElectric}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="240" y="0" width="30" height="15" uuid="0115d154-1245-4b4b-921b-e767d4cb87cd"/>
+					<textFieldExpression><![CDATA[$F{QbaDashboard}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="270" y="0" width="30" height="15" uuid="617a94b9-007d-4b41-9834-b71f2fc77177"/>
+					<textFieldExpression><![CDATA[$F{LbsiSerahtenata}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="300" y="0" width="30" height="15" uuid="e1db7c14-f784-4fa9-8f93-bdcf64b1aca9"/>
+					<textFieldExpression><![CDATA[$F{Meereyi}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="330" y="0" width="30" height="15" uuid="3ccbcb6f-c386-48b3-b434-a427e31f4c9f"/>
+					<textFieldExpression><![CDATA[$F{DemozSerahtena}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="360" y="0" width="30" height="15" uuid="9b4791ea-573e-4b5a-8615-ab2e9fe5dd63"/>
+					<textFieldExpression><![CDATA[$F{Sheb}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="390" y="0" width="30" height="15" uuid="bf2c47d9-803d-457e-bdd0-d6b0085ca508"/>
+					<textFieldExpression><![CDATA[$F{Diter}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="420" y="0" width="30" height="15" uuid="c0fa1f54-c6e9-4d1d-a930-775017e0d629"/>
+					<textFieldExpression><![CDATA[$F{Tornyo}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="450" y="0" width="30" height="15" uuid="e9d20f9c-2456-47b0-ae11-1d0842e8e61a"/>
+					<textFieldExpression><![CDATA[$F{Goz}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="480" y="0" width="30" height="15" uuid="8e2eafb4-be55-49cd-89f7-4282a4950a66"/>
+					<textFieldExpression><![CDATA[$F{Kanava}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="510" y="0" width="30" height="15" uuid="d9ac3b38-625b-49a0-9894-daca8d7a95bb"/>
+					<textFieldExpression><![CDATA[$F{Gohaf}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="540" y="0" width="30" height="15" uuid="a0b5da69-6fbd-4393-acdd-7fd86a3c9603"/>
+					<textFieldExpression><![CDATA[$F{Mekoster}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="570" y="0" width="30" height="15" uuid="3ba09546-e807-48c1-af26-9d07fd2f57b3"/>
+					<textFieldExpression><![CDATA[$F{Kalamederiya}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="600" y="0" width="30" height="15" uuid="d4154b27-c062-4530-88ad-cf0800db9469"/>
+					<textFieldExpression><![CDATA[$F{Photocopy}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="630" y="0" width="30" height="15" uuid="febf4272-ac5f-4324-a9a1-2eb2a6d38454"/>
+					<textFieldExpression><![CDATA[$F{Drawliko}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="660" y="0" width="30" height="15" uuid="bda17952-194a-4087-8d92-e536b2a7d26f"/>
+					<textFieldExpression><![CDATA[$F{Shgomano}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="690" y="0" width="30" height="15" uuid="7a8b5128-a871-479d-8d36-24967ea3419f"/>
+					<textFieldExpression><![CDATA[$F{Shankielotat}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="720" y="0" width="30" height="15" uuid="3bc98007-7ff5-40cd-9197-c4abd888aee1"/>
+					<textFieldExpression><![CDATA[$F{Kale}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Detail" x="750" y="0" width="30" height="15" uuid="3669ca7e-f644-4711-8335-c4acb84b5709"/>
+					<textFieldExpression><![CDATA[$F{Olet}]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="6" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="3" width="802" height="1" uuid="540b4349-f125-4785-a731-01484bc991e1"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="25" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="-21" y="1" width="843" height="24" forecolor="#D0B48E" backcolor="#F2EBDF" uuid="800db153-fc22-41ef-acd6-40d9b6f49017"/>
+				<textField evaluationTime="Report">
+					<reportElement style="Column header" x="783" y="1" width="40" height="20" forecolor="#736343" uuid="1cca92c9-724f-4184-87c4-67a3cb6557b1"/>
+					<textElement verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Column header" x="703" y="1" width="80" height="20" forecolor="#736343" uuid="140937d4-10b7-4232-8264-e6e68e93a6a2"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+				</textField>
+				<textField pattern="EEEEE dd MMMMM yyyy">
+					<reportElement style="Column header" x="22" y="1" width="197" height="20" forecolor="#736343" uuid="82767f16-09c5-424d-ae30-80ed7272009d"/>
+					<textElement verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
